@@ -3,7 +3,7 @@ import about from "/assets/about.png";
 const About = () => {
     return (
         <section className=" w-full h-screen flex ">
-            <div className=" h-full w-3/5 bg-[#A7B6CC] text-4xl py-10 px-20 flex flex-col justify-center text-white gap-8">
+            <div className=" h-full w-3/5 bg-[#A7B6CC] text-[1.8vw] py-10 px-20 flex flex-col justify-center text-white gap-8">
                 <p>
                     At Your Gifts Box, we believe that the best gifts are the
                     ones that feel personal. That’s why we’ve made it our

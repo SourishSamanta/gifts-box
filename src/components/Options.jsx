@@ -1,19 +1,21 @@
 import React from 'react'
 import rainbow from '/assets/rainbow.png'
+import { useNavigate } from 'react-router-dom'
 const Options = () => {
+  const navigate = useNavigate();
   return (
     <section className=' w-full min-h-screen'>
       <div className='w-full min-h-[50vh]  flex items-center justify-center gap-10'>
 
-        <div className='cherry w-[25%] h-[40vh] rounded-3xl text-white text-3xl bg-[url(/assets/kidsbg.png)] bg-cover  flex items-center justify-center'>
+        <div onClick={() => navigate('/kids')} className='cherry w-[25%] h-[40vh] rounded-3xl text-white text-3xl bg-[url(/assets/kidsbg.png)] bg-cover cursor-pointer hover:scale-105 transition-all ease-in-out flex items-center justify-center'>
           Kids
         </div>
 
-        <div className='cherry w-[25%] h-[40vh] rounded-3xl text-white text-3xl bg-[url(/assets/adultsbg.png)] bg-cover flex items-center justify-center'>
+        <div className='cherry w-[25%] h-[40vh] rounded-3xl text-white text-3xl bg-[url(/assets/adultsbg.png)] bg-cover cursor-pointer hover:scale-105 transition-all ease-in-out flex items-center justify-center'>
           Adults
         </div>
 
-        <div className='cherry w-[25%] h-[40vh] rounded-3xl text-white text-3xl bg-[url(/assets/corporatebg.png)] bg-cover flex items-center justify-center'>
+        <div className='cherry w-[25%] h-[40vh] rounded-3xl text-white text-3xl bg-[url(/assets/corporatebg.png)] bg-cover cursor-pointer hover:scale-105 transition-all ease-in-out flex items-center justify-center'>
           Corporate
         </div>
 

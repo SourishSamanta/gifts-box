@@ -6,6 +6,7 @@ import About from '../components/About'
 import WhyChooseUs from '../components/WhyChooseUs'
 import HowItWorks from '../components/HowItWorks'
 import PointsToBeNoted from '../components/PointsToBeNoted'
+import Footer from '../components/Footer'
 
 const LandingPage = () => {
   return (
@@ -17,6 +18,7 @@ const LandingPage = () => {
         <WhyChooseUs />
         <HowItWorks />
         <PointsToBeNoted />
+        <Footer />
     </main>
   )
 }

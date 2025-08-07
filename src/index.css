@@ -18,3 +18,39 @@
   align-items: center;
   justify-content: center;
 }
+
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hidden {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none;    /* Firefox */
+}
+
+.text-stroke-white{
+  text-shadow:
+    -3px -3px 0 #fff,
+    3px -3px 0 #fff,
+    -3px 3px 0 #fff,
+    3px 3px 0 #fff;
+}
+
+.text-shadow{
+  text-shadow:
+    -3px -3px 1px #ffb055,
+    3px -3px 1px #ffb055,
+    
+}
+
+.text-outline {
+  text-shadow:
+    -3px -3px 0 #fff,
+    3px -3px 0 #fff,
+    -3px 3px 0 #fff,
+    3px 3px 0 #fff,
+    0px 3px 0 #fff,
+    3px 0px 0 #fff,
+    0px -3px 0 #fff,
+    -3px 0px 0 #fff;
+}

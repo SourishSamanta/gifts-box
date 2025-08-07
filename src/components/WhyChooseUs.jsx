@@ -16,17 +16,7 @@ const WhyChooseUs = () => {
             label: "Premium quality",
         },
         {
-            icon: (
-                <div className="flex flex-col items-center">
-                    <p className="text-xs tracking-widest font-bold mb-1">
-                        HAND
-                    </p>
-                    <Hand size={38} strokeWidth={1.5} />
-                    <p className="text-xs tracking-widest font-bold mt-1">
-                        MADE
-                    </p>
-                </div>
-            ),
+            icon: <Hand size={38} strokeWidth={1.5} />,
             label: "Handmade with love",
         },
     ];

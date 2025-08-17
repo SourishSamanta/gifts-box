@@ -1,6 +1,9 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import ProductCard from "../components/ProductCard";
+import { useEffect } from "react";
+import { useState } from "react";
+import axios from "axios";
 
 const products = [
   {
@@ -83,8 +86,7 @@ const products = [
         "/assets/kids/bag3.jpeg",
         "/assets/kids/bag4.jpeg",
         "/assets/kids/bag3.jpeg",
-        
-        
+
     ],
     details: [
       "Size - 7.5in X 7.5in",
@@ -98,10 +100,23 @@ const products = [
 
 const KidsPage = () => {
     const navigate = useNavigate();
+const [products, setProducts] = useState([]);
 
-    const handleClick = (product) => {
-        navigate("/product", { state: product });
-    };
+  useEffect(() => {
+    axios
+      .get("http://localhost:5000/api/products") // 🔁 Replace with your backend URL
+      .then((res) => {
+        const kidsProducts = res.data.filter(p => p.type === "kids");
+        setProducts(kidsProducts);
+      })
+      .catch((err) => {
+        console.error("Failed to fetch products:", err);
+      });
+  }, []);
+
+  const handleClick = (product) => {
+    navigate("/product", { state: product });
+  };
     return (
         <div className="w-full">
             {/* Top Banner */}
@@ -227,7 +242,7 @@ const KidsPage = () => {
 
             {/* Product Grid */}
             <div className="py-16 px-6 md:px-20 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6">
-                {products.concat(products, products, products).map((product, index) => (
+                {products.map((product, index) => (
                     <ProductCard
                         key={`${product.id || index}-${index}`}
                         product={product}

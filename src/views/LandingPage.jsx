@@ -18,7 +18,7 @@ const LandingPage = () => {
         <WhyChooseUs />
         <HowItWorks />
         <PointsToBeNoted />
-        <Footer />
+        
     </main>
   )
 }

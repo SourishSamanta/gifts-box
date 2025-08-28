@@ -1,5 +1,6 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import axios from "axios";
 const BestSellers = () => {
     const bestSellers = [
         {
@@ -21,17 +22,33 @@ const BestSellers = () => {
             img: "/assets/react.svg",
         },
     ];
+    const [products, setProducts] = useState([]);
     const scrollRef = useRef(null);
+    useEffect(() => {
+        axios
+            .get("http://localhost:5000/api/products") // 🔁 Replace with your backend URL
+            .then((res) => {
+                const kidsProducts = res.data.filter((p) => p.type === "kids");
+                setProducts(kidsProducts);
+            })
+            .catch((err) => {
+                console.error("Failed to fetch products:", err);
+            });
+    }, []);
 
-  const scroll = (direction) => {
-    if (scrollRef.current) {
-      const scrollAmount = 300;
-      scrollRef.current.scrollBy({
-        left: direction === "left" ? -scrollAmount : scrollAmount,
-        behavior: "smooth",
-      });
-    }
-  };
+    const handleClick = (product) => {
+        navigate("/product", { state: product });
+    };
+    const scroll = (direction) => {
+        if (scrollRef.current) {
+            const scrollAmount = 300;
+            scrollRef.current.scrollBy({
+                left: direction === "left" ? -scrollAmount : scrollAmount,
+                behavior: "smooth",
+            });
+        }
+    };
+
     return (
         <section className=" w-full h-screen flex flex-col items-center justify-center gap-15">
             <h1 className="text-5xl font-bold mb-10 flex flex-wrap justify-center text-shadow">
@@ -47,9 +64,7 @@ const BestSellers = () => {
                 <span className="text-pink-500 cherry text-stroke-white">
                     t
                 </span>
-                <span className="w-5">
-                    
-                </span>
+                <span className="w-5"></span>
                 <span className="text-purple-500 cherry text-stroke-white">
                     S
                 </span>
@@ -68,7 +83,6 @@ const BestSellers = () => {
                 <span className="text-orange-500 cherry text-stroke-white">
                     r
                 </span>
-                
             </h1>
             <div className="relative w-full h-[50%]  flex items-center">
                 <button
@@ -82,15 +96,25 @@ const BestSellers = () => {
                     ref={scrollRef}
                     className="flex gap-8 overflow-x-auto px-10 w-full scroll-smooth scrollbar-hidden"
                 >
-                    {bestSellers.map((e, index) => (
+                    {products.slice(0,10).map((e, index) => (
                         <div
                             key={index}
-                            className={`min-w-[40vh] h-[40vh]  ${index%2==0? 'bg-[#F4E6D8]' : 'bg-[#E95CA1]'} rounded-2xl flex items-center justify-center shrink-0`}
+                            className={`min-w-[40vh] h-[40vh]  ${
+                                index % 2 == 0 ? "bg-[#F4E6D8]" : "bg-[#E95CA1]"
+                            } rounded-2xl flex items-center justify-center shrink-0`}
+                            onClick={(e) => {
+                                e.stopPropagation(); // Prevent card click from firing
+                                handleClick();
+                            }}
                         >
                             <img
-                                src={e.img}
-                                className="w-[36vh] h-[36vh] object-cover object-center"
+                                src={e.images?.[0]}
+                                className="w-[36vh] h-[36vh] rounded-xl object-cover object-center"
                                 alt=""
+                                onClick={(e) => {
+                                e.stopPropagation(); // Prevent card click from firing
+                                handleClick();
+                            }}
                             />
                         </div>
                     ))}

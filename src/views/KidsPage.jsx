@@ -104,7 +104,7 @@ const [products, setProducts] = useState([]);
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/products") // 🔁 Replace with your backend URL
+      .get("https://gifts-box-backend.onrender.com/api/products") // 🔁 Replace with your backend URL
       .then((res) => {
         const kidsProducts = res.data.filter(p => p.type === "kids");
         setProducts(kidsProducts);

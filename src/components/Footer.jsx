@@ -9,9 +9,9 @@ const Footer = () => {
                 {/* Logo */}
                 <div>
                     <img
-                        src="/your-logo.png"
+                        src="/assets/logo.png"
                         alt="YourGiftsBox Logo"
-                        className="h-24 w-auto"
+                        className="h-32 w-auto"
                     />
                 </div>
 

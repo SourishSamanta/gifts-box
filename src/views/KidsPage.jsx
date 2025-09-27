@@ -240,6 +240,8 @@ const [products, setProducts] = useState([]);
                 />
             </div>
 
+            <h1 className=" cherry text-4xl text-orange-400 px-20 pt-20 "> Our Products</h1>
+
             {/* Product Grid */}
             <div className="py-16 px-6 md:px-20 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6">
                 {products.map((product, index) => (

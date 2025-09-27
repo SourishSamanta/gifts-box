@@ -21,11 +21,42 @@ const steps = [
 const HowItWorks = () => {
   return (
     <section className="w-full min-h-screen bg-[#A7B6CC] flex flex-col items-center py-20 relative">
-      <h1 className="text-5xl font-bold text-white mb-16 cherry tracking-wide">
-        
-          How It Works?
-       
-      </h1>
+      <h1 className="text-5xl font-bold mb-10 flex flex-wrap justify-center text-shadow-[10px] text-shadow-orange-500">
+                <span className="text-orange-500 cherry text-stroke-white">
+                    H
+                </span>
+                <span className="text-yellow-500 cherry text-stroke-white">
+                    o
+                </span>
+                <span className="text-green-600 cherry text-stroke-white">
+                    w{" "}
+                </span>
+                <span className="w-5"></span>
+                <span className="text-pink-500 cherry text-stroke-white">
+                    I
+                </span>
+                <span className="text-orange-400 cherry text-stroke-white">
+                    t{" "}
+                </span>
+                <span className="w-5"></span>
+                <span className="text-pink-400 cherry text-stroke-white">
+                    W
+                </span>
+                <span className="text-green-600 cherry text-stroke-white">
+                    o
+                </span>
+                <span className="text-orange-500 cherry text-stroke-white">
+                    r
+                </span>
+                <span className="text-green-600 cherry text-stroke-white">
+                    k
+                </span>
+                <span className="text-pink-500 cherry text-stroke-white">
+                    s
+                </span>
+                
+                <span className="text-red-500 cherry text-stroke-white">?</span>
+            </h1>
 
       <div className="flex flex-col gap-10 items-center relative z-10 mt-20">
         {/* Step 1 */}

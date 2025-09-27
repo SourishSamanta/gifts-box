@@ -27,11 +27,60 @@ const PointsToBeNoted = () => {
   return (
     <section className="bg-[#F4E6DD] w-full py-30 px-4 flex flex-col items-center">
       {/* Header */}
-      <h2 className="text-4xl font-bold cherry mb-15">
-        
-          Points to be Noted
-        
-      </h2>
+      <h1 className="text-5xl font-bold mb-10 flex flex-wrap justify-center text-shadow-[10px] text-shadow-orange-500">
+                <span className="text-orange-500 cherry text-stroke-white">
+                    P
+                </span>
+                <span className="text-yellow-500 cherry text-stroke-white">
+                    o
+                </span>
+                <span className="text-green-600 cherry text-stroke-white">
+                    i
+                </span>
+                
+                <span className="text-pink-500 cherry text-stroke-white">
+                    n
+                </span>
+                <span className="text-orange-400 cherry text-stroke-white">
+                    t
+                </span>
+                <span className="text-purple-500 cherry text-stroke-white">
+                    s
+                </span>
+                <span className="w-4"></span>
+                <span className="text-green-500 cherry text-stroke-white">
+                    t
+                </span>
+                <span className="text-orange-600 cherry text-stroke-white">
+                    o
+                </span>
+                <span className="w-4"></span>
+                <span className="text-pink-400 cherry text-stroke-white">
+                    b
+                </span>
+                <span className="text-green-600 cherry text-stroke-white">
+                    e
+                </span>
+                <span className="w-4"></span>
+                <span className="text-orange-500 cherry text-stroke-white">
+                    N
+                </span>
+                <span className="text-yellow-500 cherry text-stroke-white">
+                    o
+                </span>
+                <span className="text-green-600 cherry text-stroke-white">
+                    t
+                </span>
+                
+                <span className="text-pink-500 cherry text-stroke-white">
+                    e
+                </span>
+                <span className="text-orange-400 cherry text-stroke-white">
+                    d
+                </span>
+                
+                
+            </h1>
 
       {/* Notes Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl">

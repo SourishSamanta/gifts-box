@@ -33,6 +33,7 @@ const WhyChooseUs = () => {
                 <span className="text-green-600 cherry text-stroke-white">
                     y{" "}
                 </span>
+                <span className="w-5"></span>
                 <span className="text-pink-500 cherry text-stroke-white">
                     C
                 </span>
@@ -51,6 +52,7 @@ const WhyChooseUs = () => {
                 <span className="text-pink-400 cherry text-stroke-white">
                     e{" "}
                 </span>
+                <span className="w-5"></span>
                 <span className="text-green-600 cherry text-stroke-white">
                     U
                 </span>

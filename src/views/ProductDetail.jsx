@@ -3,7 +3,7 @@ import { useLocation } from "react-router-dom";
 import ImageCarousel from "../components/ImageCarousel";
 import { FaWhatsapp } from "react-icons/fa";
 
-const ADMIN_WHATSAPP_NUMBER = "918017728704";
+const ADMIN_WHATSAPP_NUMBER = "918169431806";
 
 const ProductDetail = () => {
     const { state } = useLocation();
@@ -14,6 +14,8 @@ const ProductDetail = () => {
         details = [],
         price = "",
     } = state || {};
+
+    console.log(details.length)
 
     // Build a clean, readable WhatsApp message
     const whatsappText = useMemo(() => {
@@ -29,7 +31,7 @@ const ProductDetail = () => {
             "Hello! I'd like to buy this item 👇",
             "",
             `🛍️ Product: ${title}`,
-            price !== "" ? `💰 Price: ₹${price}/-` : "",
+            price !== null ? `💰 Price: ₹${price}/-` : "",
             description
                 ? `📝 About: ${description.slice(0, 160)}${
                       description.length > 160 ? "..." : ""
@@ -74,7 +76,7 @@ const ProductDetail = () => {
                             <p className="text-gray-600">{description}</p>
                         )}
 
-                        {Array.isArray(details) && details.length > 0 && (
+                        {Array.isArray(details) && details.length > 1 && (
                             <div>
                                 <h3 className="text-gray-600">Details:</h3>
                                 <ul className=" list-inside text-gray-600">
@@ -88,7 +90,7 @@ const ProductDetail = () => {
                         <div className="text-sm">
                             Price:{" "}
                             <span className="text-4xl ml-5 font-semibold">
-                                {price !== "" ? `₹${price}/-` : "On request"}
+                                {price !== null ? `₹${price}/-` : "On request"}
                             </span>
                         </div>
 

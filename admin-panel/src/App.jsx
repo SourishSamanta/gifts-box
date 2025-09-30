@@ -3,7 +3,7 @@ import AddProductForm from "./components/AddProductForm";
 import ProductList from "./components/ProductList";
 import axios from "axios";
 
-const BACKEND_URL = "http://localhost:5000/api/products"; // Replace if deployed
+const BACKEND_URL = "https://gifts-box-backend.onrender.com/api/products"; // Replace if deployed
 
 const App = () => {
   const [products, setProducts] = useState([]);

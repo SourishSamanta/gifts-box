@@ -109,7 +109,7 @@ const CorporatePage = () => {
             </div>
 
             {/* Hero Section */}
-            <div className="bg-[#A7B6CC] px-4 md:px-20 h-[80vh] flex items-center justify-center gap-10 relative">
+            <div className="bg-[#a7b6cc75]  px-4 md:px-20 h-[80vh] flex items-center justify-center gap-10 relative">
                 {/* Top Curve */}
 
                 

@@ -15,7 +15,7 @@ const Options = () => {
           Adults
         </div>
 
-        <div className='cherry w-[25%] h-[40vh] rounded-3xl text-white text-3xl bg-[url(/assets/corporatebg.png)] bg-cover cursor-pointer hover:scale-105 transition-all ease-in-out flex items-center justify-center'>
+        <div onClick={() => navigate('/corporate')} className='cherry w-[25%] h-[40vh] rounded-3xl text-white text-3xl bg-[url(/assets/corporatebg.png)] bg-cover cursor-pointer hover:scale-105 transition-all ease-in-out flex items-center justify-center'>
           Corporate
         </div>
 

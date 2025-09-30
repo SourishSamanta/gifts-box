@@ -21,9 +21,8 @@ const Footer = () => {
                         Contact Info
                     </h3>
                     <ul className="space-y-1 text-green-700">
-                        <li>Lorem ipsum</li>
-                        <li>Lorem ipsum</li>
-                        <li>Lorem ipsum</li>
+                        <li>+91 81694 31806</li>
+                        
                     </ul>
                 </div>
 
@@ -33,9 +32,9 @@ const Footer = () => {
                         Address
                     </h3>
                     <ul className="space-y-1 text-green-700">
-                        <li>Lorem ipsum</li>
-                        <li>Lorem ipsum</li>
-                        <li>Lorem ipsum</li>
+                        <li>Mumbai,</li>
+                        <li>India</li>
+                        
                     </ul>
                 </div>
 

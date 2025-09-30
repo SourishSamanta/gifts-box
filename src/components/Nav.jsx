@@ -11,7 +11,7 @@ const Nav = () => {
         <ul className=' flex gap-10 text-orange-400'>
             <li onClick={() => navigate('/kids')} className=' hover:text-green-500 cursor-pointer'>Kids</li>
             <li onClick={() => navigate('/adults')} className=' hover:text-green-500 cursor-pointer'>Adults</li>
-            <li className=' hover:text-green-500 cursor-pointer'>Corporate</li>
+            <li onClick={() => navigate('/corporate')} className=' hover:text-green-500 cursor-pointer'>Corporate</li>
             <li className=' hover:text-green-500 cursor-pointer'>About Us</li>
             <li className=' hover:text-green-500 cursor-pointer'>Contact Us</li>
         </ul>

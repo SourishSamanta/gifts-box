@@ -5,6 +5,7 @@ import ProductDetail from './views/ProductDetail'
 import AdultsPage from './views/AdultsPage'
 import Nav from './components/Nav'
 import Footer from './components/Footer'
+import CorporatePage from './views/CorporatePage'
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <Route path="/" element={<LandingPage />} />
         <Route path="/kids" element={<KidsPage />} />
         <Route path="/adults" element={<AdultsPage />} />
+        <Route path="/corporate" element={<CorporatePage />} />
         <Route path="/product" element={<ProductDetail />} />
       </Routes>
       <Footer />

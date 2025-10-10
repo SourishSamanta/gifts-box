@@ -114,7 +114,7 @@ const CorporatePage = () => {
 
                 
                 <div className="text-center">
-                    <h2 className="text-4xl md:text-5xl font-bold mb-6">
+                    <h2 className="text-2xl md:text-5xl  font-bold mb-6">
                         <span className="text-pink-500 text-outline cherry">
                             W
                         </span>
@@ -205,7 +205,7 @@ const CorporatePage = () => {
                         </span>
                     </h2>
 
-                    <p className="text-3xl space-y-2 max-w-3xl mx-auto mt-4 font-medium text-center text-gray-800">
+                    <p className="md:text-3xl text-xl space-y-2 max-w-3xl mx-auto mt-4 font-medium text-center text-gray-800">
                         Whether it’s a birthday, anniversary, wedding, or just
                         because—our personalised gifts for adults are made to
                         make someone feel truly special.
@@ -215,8 +215,10 @@ const CorporatePage = () => {
                 
             </div>
 
+            <h1 className=" cherry md:text-4xl text-3xl text-[#A7B6CC] md:px-20 px-5 pt-20 ">Our Products</h1>
+
             {/* Product Grid */}
-            <div className="py-16 px-6 md:px-20 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6">
+            <div className="md:py-16 py-8 px-6 md:px-20 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6">
                 {products.map((product, index) => (
                     <ProductCard
                         key={`${product.id || index}-${index}`}

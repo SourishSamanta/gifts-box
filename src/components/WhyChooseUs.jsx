@@ -23,7 +23,7 @@ const WhyChooseUs = () => {
 
     return (
         <section className="w-full h-[55vh] bg-[#F4E6D8] flex flex-col items-center justify-center px-6">
-            <h1 className="text-5xl font-bold mb-10 flex flex-wrap justify-center text-shadow-[10px] text-shadow-orange-500">
+            <h1 className="md:text-5xl text-2xl font-bold mb-10 flex flex-wrap justify-center text-shadow-[10px] text-shadow-orange-500">
                 <span className="text-orange-500 cherry text-stroke-white">
                     W
                 </span>
@@ -33,7 +33,7 @@ const WhyChooseUs = () => {
                 <span className="text-green-600 cherry text-stroke-white">
                     y{" "}
                 </span>
-                <span className="w-5"></span>
+                <span className="md:w-5 w-3"></span>
                 <span className="text-pink-500 cherry text-stroke-white">
                     C
                 </span>
@@ -52,7 +52,7 @@ const WhyChooseUs = () => {
                 <span className="text-pink-400 cherry text-stroke-white">
                     e{" "}
                 </span>
-                <span className="w-5"></span>
+                <span className="md:w-5 w-3"></span>
                 <span className="text-green-600 cherry text-stroke-white">
                     U
                 </span>
@@ -62,7 +62,7 @@ const WhyChooseUs = () => {
                 <span className="text-red-500 cherry text-stroke-white">?</span>
             </h1>
 
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-20 mt-5">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-20 mt-5 px-5">
                 {features.map((item, index) => (
                     <div
                         key={index}

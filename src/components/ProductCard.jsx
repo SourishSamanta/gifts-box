@@ -20,10 +20,10 @@ const ProductCard = ({ product }) => {
       <img
         src={thumb}
         alt={title}
-        className="w-full h-48 object-cover"
+        className="w-full md:h-48 h-32 object-cover"
       />
-      <div className="p-4">
-        <h3 className="text-lg font-medium line-clamp-1">{title}</h3>
+      <div className="md:p-4 p-2 pt-4">
+        <h3 className="md:text-lg text-xs font-medium line-clamp-1">{title}</h3>
         <div className="flex items-center justify-between">
           <p className="text-gray-700">{price}</p>
           <button

@@ -2,10 +2,10 @@ import React from "react";
 import basket from "/assets/basket.png";
 const Hero = () => {
     return (
-        <section className=" w-full h-screen bg-[url(/assets/bg.png)] bg-cover bg-center flex items-center justify-center">
+        <section className=" w-full h-screen bg-[url(/assets/bg.png)] bg-cover bg-center flex items-center justify-center overflow-clip">
             <div className="relative flex flex-col items-center justify-center gap-10">
-                <img src={basket} className=" -mb-20 z-20 h-[13vh]" alt="" />
-                <h1 className="text-8xl  leading-tight">
+                <img src={basket} className=" md:-mb-20 -mb-16 z-20 h-[13vh]" alt="" />
+                <h1 className="md:text-8xl text-5xl leading-tight">
                     <span className="text-orange-500 text-outline cherry ">G</span>
                     <span className="text-green-500 text-outline cherry ">i</span>
                     <span className="text-pink-500 text-outline cherry">f</span>

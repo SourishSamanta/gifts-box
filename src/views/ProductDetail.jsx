@@ -57,7 +57,7 @@ const ProductDetail = () => {
 
     return (
         <section className="flex flex-col ">
-            <div className=" w-full min-h-screen pt-40 p-20 bg-[url(/assets/kidsProductBg.png)] bg-cover">
+            <div className=" w-full min-h-screen pt-40 md:p-20 p-5 bg-[url(/assets/kidsProductBg.png)] bg-cover">
                 <h2 className=" text-3xl  text-outline ">
                     <span className=" text-[#F68C24] ">Product</span>{" "}
                     <span className=" text-[#86C986]">Details</span>
@@ -65,7 +65,7 @@ const ProductDetail = () => {
 
                 <div className="min-h-screen  px-8 py-12 flex flex-col md:flex-row gap-10 items-start">
                     {/* Image Carousel */}
-                    <div className="w-full md:w-1/2 h-[60vh]">
+                    <div className="w-full md:w-1/2 md:h-[60vh]">
                         <ImageCarousel images={images} />
                     </div>
 

@@ -8,7 +8,7 @@ const ImageCarousel = ({ images }) => {
     
     >
       {images.map((img, idx) => (
-        <div className=" h-[60vh] flex items-center justify-center" key={idx}>
+        <div className=" md:h-[60vh] h-[50vh] flex items-center justify-center" key={idx}>
           <img className=" h-full object-contain" src={img} alt={`Product ${idx + 1}`} />
         </div>
       ))}

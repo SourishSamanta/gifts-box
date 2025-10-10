@@ -5,17 +5,17 @@ const Options = () => {
   const navigate = useNavigate();
   return (
     <section className=' w-full min-h-screen'>
-      <div className='w-full min-h-[50vh]  flex items-center justify-center gap-10'>
+      <div className='w-full min-h-[50vh]  flex md:flex-row flex-col items-center justify-center gap-10 py-10'>
 
-        <div onClick={() => navigate('/kids')} className='cherry w-[25%] h-[40vh] rounded-3xl text-white text-3xl bg-[url(/assets/kidsbg.png)] bg-cover cursor-pointer hover:scale-105 transition-all ease-in-out flex items-center justify-center'>
+        <div onClick={() => navigate('/kids')} className='cherry md:w-[25%] w-[95%] h-[40vh] rounded-3xl text-white text-3xl bg-[url(/assets/kidsbg.png)] bg-cover cursor-pointer hover:scale-105 transition-all ease-in-out flex items-center justify-center'>
           Kids
         </div>
 
-        <div onClick={() => navigate('/adults')} className='cherry w-[25%] h-[40vh] rounded-3xl text-white text-3xl bg-[url(/assets/adultsbg.png)] bg-cover cursor-pointer hover:scale-105 transition-all ease-in-out flex items-center justify-center'>
+        <div onClick={() => navigate('/adults')} className='cherry md:w-[25%] w-[95%] h-[40vh] rounded-3xl text-white text-3xl bg-[url(/assets/adultsbg.png)] bg-cover cursor-pointer hover:scale-105 transition-all ease-in-out flex items-center justify-center'>
           Adults
         </div>
 
-        <div onClick={() => navigate('/corporate')} className='cherry w-[25%] h-[40vh] rounded-3xl text-white text-3xl bg-[url(/assets/corporatebg.png)] bg-cover cursor-pointer hover:scale-105 transition-all ease-in-out flex items-center justify-center'>
+        <div onClick={() => navigate('/corporate')} className='cherry md:w-[25%] w-[95%] h-[40vh] rounded-3xl text-white text-3xl bg-[url(/assets/corporatebg.png)] bg-cover cursor-pointer hover:scale-105 transition-all ease-in-out flex items-center justify-center'>
           Corporate
         </div>
 
@@ -24,9 +24,9 @@ const Options = () => {
       <div className='relative banner w-full min-h-[50vh] bg-[#A7B6CC] flex items-center justify-center'>
         <img src={rainbow} className=' absolute h-1/3 top-0 right-0 rotate-180' alt="" />
         <img src={rainbow} className=' absolute h-1/3 bottom-0 left-0' alt="" />
-        <h2 className=' text-4xl text-white text-center w-2/3'>
+        <h2 className=' md:text-4xl text-xl text-white text-center w-2/3'>
           From birthdays to weddings, anniversaries
-to corporate events — We craft customised gifts that leave a lasting impression.
+          to corporate events — We craft customised gifts that leave a lasting impression.
         </h2>
       </div>
     </section>

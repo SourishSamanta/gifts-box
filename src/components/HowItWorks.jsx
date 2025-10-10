@@ -20,7 +20,7 @@ const steps = [
 
 const HowItWorks = () => {
   return (
-    <section className="w-full min-h-screen bg-[#A7B6CC] flex flex-col items-center py-20 relative">
+    <section className="w-full min-h-screen bg-[#A7B6CC] md:flex flex-col items-center py-20 relative hidden">
       <h1 className="text-5xl font-bold mb-10 flex flex-wrap justify-center text-shadow-[10px] text-shadow-orange-500">
                 <span className="text-orange-500 cherry text-stroke-white">
                     H

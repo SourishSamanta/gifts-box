@@ -3,8 +3,8 @@ import logo from "/assets/logo.png";
 import { useNavigate } from "react-router-dom";
 import { FaWhatsapp } from "react-icons/fa";
 
-// Put your number in .env as VITE_ADMIN_WA=919876543210 (no +, no spaces)
-const ADMIN_WHATSAPP_NUMBER = import.meta.env.VITE_ADMIN_WA || "919876543210";
+
+const ADMIN_WHATSAPP_NUMBER = import.meta.env.VITE_ADMIN_WA || "918169431806";
 
 const Nav = () => {
   const navigate = useNavigate();

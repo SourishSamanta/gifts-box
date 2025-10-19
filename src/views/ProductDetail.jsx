@@ -1,4 +1,4 @@
-import React, { useMemo } from "react";
+import React, { useEffect, useMemo } from "react";
 import { useLocation } from "react-router-dom";
 import ImageCarousel from "../components/ImageCarousel";
 import { FaWhatsapp } from "react-icons/fa";
@@ -15,7 +15,10 @@ const ProductDetail = () => {
         price = "",
     } = state || {};
 
-    console.log(details.length)
+
+    useEffect(() => {
+        window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+    }, []);
 
     // Build a clean, readable WhatsApp message
     const whatsappText = useMemo(() => {
@@ -57,7 +60,7 @@ const ProductDetail = () => {
 
     return (
         <section className="flex flex-col ">
-            <div className=" w-full min-h-screen pt-40 md:p-20 p-5 bg-[url(/assets/kidsProductBg.png)] bg-cover">
+            <div className=" w-full min-h-screen pt-[12vh] md:pt-[12vh] md:p-20 p-5 bg-[url(/assets/kidsProductBg.png)] bg-cover">
                 <h2 className=" text-3xl  text-outline ">
                     <span className=" text-[#F68C24] ">Product</span>{" "}
                     <span className=" text-[#86C986]">Details</span>

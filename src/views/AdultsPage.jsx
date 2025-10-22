@@ -104,7 +104,7 @@ const AdultsPage = () => {
         <div className="w-full pt-[8vh]">
             {/* Top Banner */}
             <div className="bg-[url(/assets/adultsPageBg.png)] bg-cover flex items-center justify-center h-[30vh] text-center text-white text-4xl font-bold relative">
-            <div className=" bg-repeat h-full w-full absolute top-0 left-0 opacity-30"></div>
+                <div className=" bg-repeat h-full w-full absolute top-0 left-0 opacity-30"></div>
                 <span className=" cherry relative z-10">Adults</span>
             </div>
 
@@ -112,56 +112,56 @@ const AdultsPage = () => {
             <div className="bg-[#87c98762] px-4 md:px-20 h-[80vh] flex items-center justify-center gap-10 relative">
                 {/* Top Curve */}
 
-                
+
                 <div className="text-center">
                     <h2 className="text-2xl md:text-5xl font-bold mb-6">
                         <span className="text-pink-500 text-outline cherry">
-                            W
+                            E
                         </span>
                         <span className="text-orange-400 text-outline cherry">
-                            h
+                            v
                         </span>
                         <span className="text-green-500 text-outline cherry">
-                            i
+                            e
                         </span>
                         <span className="text-purple-400 text-outline cherry">
-                            m
+                            r
                         </span>
                         <span className="text-pink-500 text-outline cherry">
-                            s
+                            y
                         </span>
                         <span className="text-orange-400 text-outline cherry">
-                            i
+                            d
+                        </span>
+                        <span className="text-green-500 text-outline cherry">
+                            a
+                        </span>
+                        <span className="text-pink-500 text-outline cherry">
+                            y{" "}
+                        </span>
+                        <span className="text-orange-500 text-outline cherry">
+                            E
+                        </span>
+                        <span className="text-orange-400 text-outline cherry">
+                            l
+                        </span>
+                        <span className="text-purple-400 text-outline cherry">
+                            e
+                        </span>
+                        <span className="text-green-600 text-outline cherry">
+                            g
+                        </span>
+                        <span className="text-pink-500 text-outline cherry">
+                            a
+                        </span>
+                        <span className="text-orange-400 text-outline cherry">
+                            n
                         </span>
                         <span className="text-green-500 text-outline cherry">
                             c
                         </span>
                         <span className="text-pink-500 text-outline cherry">
-                            a
-                        </span>
-                        <span className="text-orange-500 text-outline cherry">
-                            l{" "}
-                        </span>
-                        <span className="text-orange-400 text-outline cherry">
-                            W
-                        </span>
-                        <span className="text-purple-400 text-outline cherry">
-                            o
-                        </span>
-                        <span className="text-green-600 text-outline cherry">
-                            n
-                        </span>
-                        <span className="text-pink-500 text-outline cherry">
-                            d
-                        </span>
-                        <span className="text-orange-400 text-outline cherry">
-                            e
-                        </span>
-                        <span className="text-green-500 text-outline cherry">
-                            r
-                        </span>
-                        <span className="text-pink-500 text-outline cherry">
-                            s{" "}
+                            e{" "}
                         </span>
                         <br />
                         <span className="text-purple-400 text-outline cherry">
@@ -174,31 +174,26 @@ const AdultsPage = () => {
                             r{" "}
                         </span>
                         <span className="text-purple-500 text-outline cherry">
-                            L
+                            G
                         </span>
                         <span className="text-pink-500 text-outline cherry">
-                            i
+                            r
                         </span>
                         <span className="text-green-500 text-outline cherry">
-                            t
+                            o
                         </span>
                         <span className="text-orange-400 text-outline cherry">
-                            t
+                            w
                         </span>
                         <span className="text-pink-400 text-outline cherry">
-                            l
+                            n{" "}
                         </span>
-                        <span className="text-purple-500 text-outline cherry">
-                            e{" "}
-                        </span>
+                        
                         <span className="text-green-600 text-outline cherry">
-                            O
+                            U
                         </span>
                         <span className="text-orange-500 text-outline cherry">
-                            n
-                        </span>
-                        <span className="text-pink-500 text-outline cherry">
-                            e
+                            p
                         </span>
                         <span className="text-purple-400 text-outline cherry">
                             s
@@ -206,13 +201,11 @@ const AdultsPage = () => {
                     </h2>
 
                     <p className="md:text-3xl text-xl space-y-2 max-w-3xl mx-auto mt-4 font-medium text-center text-gray-800">
-                        Whether it’s a birthday, anniversary, wedding, or just
-                        because—our personalised gifts for adults are made to
-                        make someone feel truly special.
+                        From personalised keepsakes to cozy home accents, our adult collection brings a touch of thoughtfulness to every celebration — big or small.
                     </p>
                 </div>
 
-                
+
             </div>
 
             <h1 className=" cherry md:text-4xl text-3xl text-green-400 md:px-20 px-5 pt-20 ">Our Products</h1>

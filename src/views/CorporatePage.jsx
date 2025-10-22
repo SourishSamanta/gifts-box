@@ -84,10 +84,12 @@ const products = [
 const CorporatePage = () => {
     const navigate = useNavigate();
     const [products, setProducts] = useState([]);
-
+    useEffect(() => {
+        window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+    }, []);
     useEffect(() => {
         axios
-            .get("https://gifts-box-backend.onrender.com/api/products") 
+            .get("https://gifts-box-backend.onrender.com/api/products")
             .then((res) => {
                 const kidsProducts = res.data.filter((p) => p.type === "corporate");
                 setProducts(kidsProducts);
@@ -104,7 +106,7 @@ const CorporatePage = () => {
         <div className="w-full pt-[8vh]">
             {/* Top Banner */}
             <div className="bg-[url(/assets/corporatePageBg.png)] bg-cover flex items-center justify-center h-[30vh] text-center text-white text-4xl font-bold relative">
-            <div className=" bg-repeat h-full w-full absolute top-0 left-0 opacity-30"></div>
+                <div className=" bg-repeat h-full w-full absolute top-0 left-0 opacity-30"></div>
                 <span className=" cherry relative z-10">Corporate</span>
             </div>
 
@@ -112,7 +114,7 @@ const CorporatePage = () => {
             <div className="bg-[#a7b6cc75]  px-4 md:px-20 h-[80vh] flex items-center justify-center gap-10 relative">
                 {/* Top Curve */}
 
-                
+
                 <div className="text-center">
                     <h2 className="text-2xl md:text-5xl  font-bold mb-6">
                         <span className="text-pink-500 text-outline cherry">
@@ -163,7 +165,7 @@ const CorporatePage = () => {
                         <span className="text-pink-500 text-outline cherry">
                             c
                         </span>
-                        
+
                         <span className="text-purple-400 text-outline cherry">
                             t
                         </span>
@@ -214,7 +216,7 @@ const CorporatePage = () => {
                     </p>
                 </div>
 
-                
+
             </div>
 
             <h1 className=" cherry md:text-4xl text-3xl text-[#7594c4] md:px-20 px-5 pt-20 ">Our Products</h1>

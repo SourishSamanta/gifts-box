@@ -84,7 +84,9 @@ const products = [
 const AdultsPage = () => {
     const navigate = useNavigate();
     const [products, setProducts] = useState([]);
-
+    useEffect(() => {
+        window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+    }, []);
     useEffect(() => {
         axios
             .get("https://gifts-box-backend.onrender.com/api/products") // 🔁 Replace with your backend URL
@@ -188,7 +190,7 @@ const AdultsPage = () => {
                         <span className="text-pink-400 text-outline cherry">
                             n{" "}
                         </span>
-                        
+
                         <span className="text-green-600 text-outline cherry">
                             U
                         </span>

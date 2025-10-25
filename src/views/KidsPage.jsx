@@ -6,117 +6,120 @@ import { useState } from "react";
 import axios from "axios";
 
 const products = [
-  {
-    id: 1,
-    title: "Kids bathtowel",
-    description: "Jiara crayons are awesome with no harmful chemicals...",
-    images: [
-      "/assets/kids/towel1.jpeg",
-      "/assets/kids/towel2.jpeg",
-      "/assets/kids/towel3.jpeg",
-      "/assets/kids/towel4.jpeg",
-      
-    ],
-    details: [
-      "Size 24 by 48 inch",
-      "Age grp upto 12 yrs",
-      "500 gsm"
-    ],
-    price: 199,
-  },
-  {
-    id: 2,
-    name: "Veigo brand tiffin set",
-    description: "Spacious, stylish bag for all your needs.",
-    images: [
-        "/assets/kids/tiffin1.jpeg",
-        "/assets/kids/tiffin2.jpeg",
-        "/assets/kids/tiffin3.jpeg",
+    {
+        id: 1,
+        title: "Kids bathtowel",
+        description: "Jiara crayons are awesome with no harmful chemicals...",
+        images: [
+            "/assets/kids/towel1.jpeg",
+            "/assets/kids/towel2.jpeg",
+            "/assets/kids/towel3.jpeg",
+            "/assets/kids/towel4.jpeg",
 
-    ],
-    details: [
-      "(Veigo Jumbo) 6 by 8.5 + 2 by 3 inch",
-      "(Veigo Large) 5 by 6 inch",
-      "(Veigo Medium) 4 by 4 inch",
-      "Round steel chutney dibbi",
-      "Spoon and fork",
-    ],
-    price: 399,
-  },
-  {
-    id: 3,
-    name: "Kids wooden hairbrush",
-    description: "Personalized water bottle for daily use.",
-    images: [
-        "/assets/kids/brush1.jpeg",
-        "/assets/kids/brush2.jpeg",
-        
-    ],
-    details: [
-      "8.5 inch by 2.5 inch",
-    ],
-    price: 299,
-  },
-  {
-    id: 4,
-    name: "Cap with cheneile initial",
-    description: "Personalized water bottle for daily use.",
-    images: [
-        "/assets/kids/cap1.jpeg",
-        "/assets/kids/cap2.jpeg",
-        "/assets/kids/cap3.jpeg",
-        
-        
-    ],
-    details: [
-      "Light blue/Light pink",
-      "For kids upto 7 yrs",
-      "Velcro behind to adjust",
+        ],
+        details: [
+            "Size 24 by 48 inch",
+            "Age grp upto 12 yrs",
+            "500 gsm"
+        ],
+        price: 199,
+    },
+    {
+        id: 2,
+        name: "Veigo brand tiffin set",
+        description: "Spacious, stylish bag for all your needs.",
+        images: [
+            "/assets/kids/tiffin1.jpeg",
+            "/assets/kids/tiffin2.jpeg",
+            "/assets/kids/tiffin3.jpeg",
 
-    ],
-    price: 299,
-  },
-  {
-    id: 5,
-    name: "Kids bag pack",
-    description: "Personalized water bottle for daily use.",
-    images: [
-        "/assets/kids/bag1.jpeg",
-        "/assets/kids/bag2.jpeg",
-        "/assets/kids/bag3.jpeg",
-        "/assets/kids/bag4.jpeg",
-        "/assets/kids/bag3.jpeg",
+        ],
+        details: [
+            "(Veigo Jumbo) 6 by 8.5 + 2 by 3 inch",
+            "(Veigo Large) 5 by 6 inch",
+            "(Veigo Medium) 4 by 4 inch",
+            "Round steel chutney dibbi",
+            "Spoon and fork",
+        ],
+        price: 399,
+    },
+    {
+        id: 3,
+        name: "Kids wooden hairbrush",
+        description: "Personalized water bottle for daily use.",
+        images: [
+            "/assets/kids/brush1.jpeg",
+            "/assets/kids/brush2.jpeg",
 
-    ],
-    details: [
-      "Size - 7.5in X 7.5in",
-      "Including Name in gold patti",
-      "Including Single cheneile patch",
+        ],
+        details: [
+            "8.5 inch by 2.5 inch",
+        ],
+        price: 299,
+    },
+    {
+        id: 4,
+        name: "Cap with cheneile initial",
+        description: "Personalized water bottle for daily use.",
+        images: [
+            "/assets/kids/cap1.jpeg",
+            "/assets/kids/cap2.jpeg",
+            "/assets/kids/cap3.jpeg",
 
-    ],
-    price: 299,
-  },
+
+        ],
+        details: [
+            "Light blue/Light pink",
+            "For kids upto 7 yrs",
+            "Velcro behind to adjust",
+
+        ],
+        price: 299,
+    },
+    {
+        id: 5,
+        name: "Kids bag pack",
+        description: "Personalized water bottle for daily use.",
+        images: [
+            "/assets/kids/bag1.jpeg",
+            "/assets/kids/bag2.jpeg",
+            "/assets/kids/bag3.jpeg",
+            "/assets/kids/bag4.jpeg",
+            "/assets/kids/bag3.jpeg",
+
+        ],
+        details: [
+            "Size - 7.5in X 7.5in",
+            "Including Name in gold patti",
+            "Including Single cheneile patch",
+
+        ],
+        price: 299,
+    },
 ];
 
 const KidsPage = () => {
     const navigate = useNavigate();
-const [products, setProducts] = useState([]);
+    const [products, setProducts] = useState([]);
+    useEffect(() => {
+        window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+    }, []);
 
-  useEffect(() => {
-    axios
-      .get("https://gifts-box-backend.onrender.com/api/products") // 🔁 Replace with your backend URL
-      .then((res) => {
-        const kidsProducts = res.data.filter(p => p.type === "kids");
-        setProducts(kidsProducts);
-      })
-      .catch((err) => {
-        console.error("Failed to fetch products:", err);
-      });
-  }, []);
+    useEffect(() => {
+        axios
+            .get("https://gifts-box-backend.onrender.com/api/products") // 🔁 Replace with your backend URL
+            .then((res) => {
+                const kidsProducts = res.data.filter(p => p.type === "kids");
+                setProducts(kidsProducts);
+            })
+            .catch((err) => {
+                console.error("Failed to fetch products:", err);
+            });
+    }, []);
 
-  const handleClick = (product) => {
-    navigate("/product", { state: product });
-  };
+    const handleClick = (product) => {
+        navigate("/product", { state: product });
+    };
     return (
         <div className="w-full pt-[8vh]">
             {/* Top Banner */}

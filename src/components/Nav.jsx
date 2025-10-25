@@ -30,7 +30,7 @@ const Nav = () => {
       <img
         onClick={() => navigate("/")}
         src={logo}
-        className="md:h-full h-3/5 cursor-pointer"
+        className="md:h-4/5 h-3/5 cursor-pointer"
         alt="Logo"
       />
 

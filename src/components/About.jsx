@@ -24,7 +24,7 @@ const About = () => {
                 </p>
             </div>
 
-            <div className=" md:h-full h-1/2 md:w-2/5 w-full bg-amber-600 bg-[url(/assets/giftBoxMockup.png)] bg-center bg-cover"></div>
+            <div className=" md:h-full h-1/2 md:w-2/5 w-full bg-amber-600 bg-[url(/assets/giftBoxMockup2.png)] bg-center bg-cover"></div>
         </section>
     );
 };

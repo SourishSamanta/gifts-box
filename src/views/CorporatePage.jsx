@@ -109,9 +109,13 @@ const CorporatePage = () => {
             </div>
 
             {/* Hero Section */}
-            <div className="bg-[#a7b6cc75]  px-4 md:px-20 h-[80vh] flex items-center justify-center gap-10 relative">
+            <div className="bg-[#a7b6cc75]  px-4 md:px-20 h-[80vh] flex items-center justify-center gap-10 relative overflow-hidden">
                 {/* Top Curve */}
-
+                <img
+                    src="/assets/book.png"
+                    alt="Plants"
+                    className="absolute top-0 -left-5 h-44"
+                />
                 
                 <div className="text-center">
                     <h2 className="text-2xl md:text-5xl  font-bold mb-6">
@@ -211,7 +215,11 @@ const CorporatePage = () => {
                         make someone feel truly special.
                     </p>
                 </div>
-
+                <img
+                    src="/assets/stationary.png"
+                    alt="Stationary"
+                    className="absolute -bottom-20  -right-20 h-72 "
+                />
                 
             </div>
 

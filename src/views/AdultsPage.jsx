@@ -111,7 +111,11 @@ const AdultsPage = () => {
             {/* Hero Section */}
             <div className="bg-[#87c98762] px-4 md:px-20 h-[80vh] flex items-center justify-center gap-10 relative">
                 {/* Top Curve */}
-
+                <img
+                    src="/assets/plants.png"
+                    alt="Plants"
+                    className="absolute top-0 left-0 h-32"
+                />
                 
                 <div className="text-center">
                     <h2 className="text-2xl md:text-5xl font-bold mb-6">
@@ -212,7 +216,11 @@ const AdultsPage = () => {
                     </p>
                 </div>
 
-                
+                <img
+                    src="/assets/adults.png"
+                    alt="adults"
+                    className="absolute bottom-0 md:right-4 right-0 h-32 "
+                />
             </div>
 
             <h1 className=" cherry md:text-4xl text-3xl text-green-400 md:px-20 px-5 pt-20 ">Our Products</h1>

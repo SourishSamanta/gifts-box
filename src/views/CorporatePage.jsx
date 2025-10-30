@@ -116,7 +116,7 @@ const CorporatePage = () => {
                 <img
                     src="/assets/book.png"
                     alt="Plants"
-                    className="absolute top-0 -left-5 h-44"
+                    className="absolute -top-5 -left-8 h-40"
                 />
                 
 
@@ -224,7 +224,7 @@ const CorporatePage = () => {
                 <img
                     src="/assets/stationary.png"
                     alt="Stationary"
-                    className="absolute -bottom-20  -right-20 h-72 "
+                    className="absolute -bottom-20  -right-20 h-60 "
                 />
                 
 

@@ -61,7 +61,7 @@ const AboutUsPage = () => {
 
         {/* Owner Image */}
         <div className="flex-1 flex justify-center">
-          <div className="relative md:w-[40vw] w-[40vh] md:h-[40vh] h-[55vh] rounded-2xl overflow-hidden shadow-2xl border-4 border-pink-300">
+          <div className="relative md:w-[40vw] w-[40vh] md:h-[90vh] h-[55vh] rounded-2xl overflow-hidden shadow-2xl border-4 border-pink-300">
             <img
               src="/assets/founder.jpeg"
               alt="Owner"
